@@ -1,0 +1,20 @@
+{
+  "name": "vendor_name/test",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Darren Sanders",
+      "email": "info@darrensanders.nl"
+    }
+  ],
+  "require": {
+    "phpunit/phpunit": "9.5.20",
+    "klein/klein": "^2.1",
+    "eftec/bladeone": "^4.5"
+  },
+  "autoload": {
+
+  }
+}
