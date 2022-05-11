@@ -1,5 +1,6 @@
 <?php
 namespace DS;
+
 use eftec\bladeone\{BladeOne};
 use Exception;
 
