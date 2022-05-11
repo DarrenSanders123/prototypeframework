@@ -70,7 +70,7 @@ class AutoLoadOne
     public $logged = false;
     public $current = '';
     public $t1 = 0;
-    public $debugMode = false;
+    public $debugMode = true;
     public $statNumClass = 0;
     public $statNumPHP = 0;
     public $statConflict = 0;
