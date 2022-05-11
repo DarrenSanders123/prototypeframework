@@ -1,5 +1,7 @@
 <?php
 
+namespace DS;
+
 class UrlFormatter
 {
     public array|null $parts = null;
