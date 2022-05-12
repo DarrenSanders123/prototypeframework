@@ -1,6 +1,7 @@
 <?php
 
 namespace DS;
+use JetBrains\PhpStorm\NoReturn;
 use ParseCsv\Csv;
 
 
@@ -34,9 +35,11 @@ class ErrorHandling
 
     }
 
-    public function ShowErrorScreen()
+    #[NoReturn]
+    public function ShowErrorScreen():void
     {
         Controller::view('error', array('code' => $this->code, 'message' => $this->message));
+        die();
     }
 
 //    public function __toString(): string
