@@ -9,7 +9,7 @@ $router->respond('GET', '/?', function () {
 
 $router->with('/students', function () use ($router) {
     $router->get('/?', function () {
-        (new StudentOverviewController())->studentsOverview();
+        (new StudentOverviewController())->index();
     });
 });
 
