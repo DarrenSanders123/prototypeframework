@@ -8,7 +8,7 @@ class StudentOverviewController extends \DS\Controller
         $this->view('students.overview', array('students' => $students)); // Show the view
     }
 
-    private function getStudents()
+    private function getStudents() : object|null
     {
         /**
          * select * from students
@@ -29,7 +29,7 @@ class StudentOverviewController extends \DS\Controller
         } catch (Exception $exception) {
             if (APP_MODE == "DEV") {
                 dd($exception); // If running in dev mode display the error else just show error 500
-            } else return new \DS\ErrorHandling(500);
+            } else (new \DS\ErrorHandling(500))->ShowErrorScreen();
         }
     }
 }
